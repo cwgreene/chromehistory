@@ -26,6 +26,9 @@ chrome.browserAction.onClicked.addListener(function(initiatingTab) {
       console.log(tabs);
       if (tabs.length == 0) {
         chrome.tabs.create({"url":"ui.html"});
+      } else {
+        const tab = tabs[0];
+        chrome.tabs.update(tab.id, {active: true});
       }
       // Don't need to wait for tab creation, as the background page
       // already exists.
