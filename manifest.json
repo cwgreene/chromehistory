@@ -1,0 +1,15 @@
+{
+  "manifest_version": 2,
+
+  "name": "Chrome History Explorer",
+  "description": "Currently, raw dump of history information",
+  "version": "1.0",
+
+  "browser_action": {
+    "default_icon": "icon.png",
+    "default_popup": "popup.html"
+  },
+  "permissions": [
+    "history"
+  ]
+}
